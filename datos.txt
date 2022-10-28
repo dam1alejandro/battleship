@@ -1,0 +1,3 @@
+"jdbc:mysql://eu-west.connect.psdb.cloud/battleship?sslMode=VERIFY_IDENTITY";
+3yrwocc3dq1cdh4mgsd5
+pscale_pw_uoUzJefCSQUqk7QlMUM0cxpUqAU2UFmIdp9kJPXsbzq

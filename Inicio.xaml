@@ -1,0 +1,51 @@
+﻿<Window x:Class="barquitos.Inicio"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:barquitos"
+        mc:Ignorable="d"
+            Title="Barquitos" Height="450" Width="450">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Image Grid.Column="0" Grid.Row="0" Source="./Assets/textBlock_titulo.png"></Image>
+        <Grid Grid.Column="0" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Button x:Name="btn_crearSala" Grid.Column="0" Margin="30" Click="CrearSala">
+                <Button.Background>
+                    <ImageBrush ImageSource="./Assets/btn_crearSala.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btn_unirseSala" Grid.Column="1" Margin="30" Click="UnirseSala">
+                <Button.Background>
+                    <ImageBrush ImageSource="./Assets/btn_unirse.png"/>
+                </Button.Background>
+            </Button>
+        </Grid>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Image Grid.Column="0" Margin="40" Source="./Assets/textBlock_nombreUsuario.png"></Image>
+            <TextBox x:Name="tbx_userName"  VerticalAlignment="Center" FontSize="20" MaxLength="10" Margin="20"  Grid.Column="1"></TextBox>
+        </Grid>
+    </Grid>
+</Window>
